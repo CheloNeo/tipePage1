@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
+
+.product_container {
+  height: 400px;
+  width: 300px;
+  background: #fff;
+  position: relative;
+
+  min-height: 400px;
+  min-width: 300px;
+
+  &:hover {
+    transition: 0.5s;
+    .product_modal {
+      transition: 0.5s;
+      opacity: 1;
+    }
+  }
+}
+
+.product_head {
+  height: 80%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 300px 370px;
+}
+
+.product_body {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgb(197, 128, 78);
+  font-family: "Poppins", sans-serif;
+}
+
+.product_modal {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0ch;
+  left: 0ch;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+
+  opacity: 0;
+  background: #5557;
+}
+
+.delete {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background: #555a;
+  border-radius: 50%;
+  padding: 3px;
+
+  transition: 0.5s;
+
+  svg:hover {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.modify {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+  background: #5559;
+  border-radius: 50%;
+  padding: 3px;
+
+  transition: 0.5s;
+
+  svg:hover {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: "600px") {
+  .product_head {
+    background-size: 270px 370px;
+  }
+
+  .product_container {
+    width: 270px;
+    min-width: 270px;
+  }
+}

@@ -1,0 +1,24 @@
+.h1 {
+  position: absolute;
+  margin: auto;
+  left: 0ch;
+  right: 0;
+  top: 0ch;
+  bottom: 0ch;
+  font-weight: lighter;
+  font-size: 70px;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  color: #fff;
+}
+
+.foto_carrusel {
+  //filter: brightness(0.7);
+}
+
+@media only screen and (max-width: "600px") {
+  .h1 {
+    font-size: 40px;
+  }
+}

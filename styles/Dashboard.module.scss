@@ -1,0 +1,93 @@
+.dashboard {
+  padding: 50px;
+  overflow: hidden;
+  height: fit-content;
+}
+
+.lista_productos {
+  width: fit-content;
+  max-width: 100%;
+  display: flex;
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+.lista_productos > div {
+  margin-right: 10px;
+}
+
+.agregar_producto {
+  width: 100%;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+  margin-top: 10px;
+  background: #d8b492;
+  border: 1px solid #000;
+}
+
+.form_producto {
+  min-width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #d1cbbe;
+  border-left: 1px solid #000;
+  font-weight: lighter;
+  font-size: 30px;
+  text-align: center;
+
+  input {
+    height: 35px;
+    width: 250px;
+  }
+
+  textarea {
+    width: 250px;
+    height: 100px;
+  }
+
+  input,
+  textarea {
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    outline: none;
+    padding: 5px;
+  }
+
+  button {
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bolder;
+    transition: 0.5s;
+
+    &:hover {
+      background: #fffa;
+    }
+  }
+}
+
+@media only screen and (max-width: "600px") {
+  .agregar_producto {
+    flex-direction: column;
+    padding: 10px;
+    height: 1200px;
+  }
+
+  .form_producto {
+    font-size: 20px;
+    padding: 15px;
+  }
+}

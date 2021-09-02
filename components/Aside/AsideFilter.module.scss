@@ -1,0 +1,52 @@
+.aside_filter {
+  min-height: 100%;
+  width: 20vw;
+  min-width: 20vw;
+}
+
+.filter_container {
+  padding-top: 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.329);
+
+  border-right: 1px solid #ddd;
+
+  label {
+    font-weight: lighter;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-weight: lighter;
+    font-size: 40px;
+  }
+
+  input {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    padding: 5px;
+    transition: 0.2s;
+
+    &:hover {
+      border-bottom: 2px solid #c05;
+    }
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .aside_filter {
+    width: 100%;
+  }
+}
