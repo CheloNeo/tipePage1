@@ -2,15 +2,14 @@ import React from "react";
 import styles from "./Contacto.module.scss";
 import Image from "next/image";
 import { Media } from "../";
-import Logo from "../../public/md_mujer.png";
+import { datos } from "../../data/datos";
 
 const Contacto = () => {
   return (
     <div className={styles.contacto} id="contacto">
       <div className={styles.contacto_foto}>
         <Image
-          src={Logo}
-          alt="logo"
+          src="/logo.jpeg"
           width="600"
           height="600"
           className={styles.foto_contacto}
@@ -18,7 +17,7 @@ const Contacto = () => {
       </div>
       <div className={styles.contacto_datos}>
         <div className={styles.contacto_header}>
-          <h1>MD Mujer</h1>
+          <h1>{datos.nombre_empresa}</h1>
         </div>
         <hr className={styles.linea} />
         <div className={styles.contacto_body}>
@@ -29,22 +28,22 @@ const Contacto = () => {
           </div>
           <div className={styles.first_cont}>
             <a
-              href="mailto:mdmujer@tiendamdmujer.cl"
+              href={`mailto:${datos.email_empresa}`}
               target="_blank"
               rel="noreferrer"
             >
-              <Media type="email" color="red" width="23" height="23" />
-              <h2>mdmujer@tiendamdmujer.cl</h2>
+              <Media type="email" color="white" width="23" height="23" />
+              <h2>{datos.email_empresa}</h2>
             </a>
           </div>
           <div className={styles.second_cont}>
             <a
-              href="https://api.whatsapp.com/send?phone=56978770897"
+              href={`https://api.whatsapp.com/send?phone=${datos.numero_empresa}`}
               target="_blank"
               rel="noreferrer"
             >
               <Media type="whatsapp" color="green" width="23" height="23" />
-              <h2>+56978770897</h2>
+              <h2>+{datos.numero_empresa}</h2>
             </a>
           </div>
         </div>

@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <Layout>
       <Presentation />
-      <Carrusel />
+      {/* <Carrusel /> */}
       <Main />
       <Contacto />
     </Layout>

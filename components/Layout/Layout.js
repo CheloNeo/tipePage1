@@ -6,9 +6,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <CustomHead />
-      <header className={styles.header}>
-        <Header />
-      </header>
+      <Header />
       {children}
     </>
   );
