@@ -23,7 +23,7 @@ const Contacto = () => {
         <div className={styles.contacto_body}>
           <div className={styles.description}>
             <p>
-              Utiliza estos medios para ponerte en contacto con nuestra tienda.
+              Utiliza estos medios para estar en contacto con nuestra tienda.
             </p>
           </div>
           <div className={styles.first_cont}>

@@ -16,7 +16,7 @@ const Header = () => {
           <Image
             src="/logo.jpeg"
             height="100%"
-            width="130"
+            width="100%"
             className={styles.fotoLogo}
           />
           <ul className={styles.header_list}>

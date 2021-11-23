@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
 
 .header {
-  width: 99.14vw;
+  width: 100vw;
   height: 15vh;
   color: #fff;
   background: #ff9300;
@@ -19,11 +19,12 @@
       font-weight: bolder;
       display: flex;
       align-items: center;
-      padding-left: 3%;
+      margin-left: 2%;
 
       .fotoLogo {
         width: 10%;
         height: 100%;
+        border-radius: 50%;
       }
 
       .header_list {
@@ -65,8 +66,20 @@
       justify-content: center;
       li {
         padding: 0px;
-        margin: 7px;
+        margin: 0px;
       }
     }
   }
+}
+@media only screen and (max-width: 265px) {
+  .header_list {
+      padding-left: 0;
+      justify-content: unset;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      li {
+        size: 5px;
+      }
+    }
 }
