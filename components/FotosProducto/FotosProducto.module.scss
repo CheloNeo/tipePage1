@@ -1,45 +1,55 @@
 .preview_foto {
+  width: 50%;
   height: 100%;
-  background: #d1cbbe;
+  background: #fff;
   display: flex;
   justify-content: center;
 
-  ul {
-    width: 150px;
-    min-width: 150px;
-    margin-left: 50px;
-    list-style: none;
-    padding: 0ch;
+  .main_foto {
+    width: 80%;
 
-    &:last-child {
-      border-bottom: none;
+    .foto_producto {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
-    li {
-      margin-bottom: 10px;
-      height: 180px;
-      width: 90%;
-      min-width: 90%;
-      border: 1px solid #000;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      transition: 0.3s;
+  }
 
-      img {
-        height: 100%;
-        width: 100%;
+  .fotos_preview {
+    width: 20%;
+    padding: 3%;
+    ul {
+      width: 100%;
+      list-style: none;
+      margin: 0%;
+      padding: 0%;
+
+      &:last-child {
+        border-bottom: none;
       }
 
-      &:hover {
-        background: #fffa;
+      li {
+        margin: 0%;
+        margin-bottom: 10px;
+        height: 13vh;
+        width: 100%;
+        border: 1px solid #000;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        transition: 0.3s;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
+
+        &:hover {
+          background: #fffa;
+        }
       }
     }
   }
-}
-
-.foto_producto {
-  height: 100%;
-  width: 500px;
-  max-width: 500px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -72,6 +82,37 @@
     img {
       max-height: 420px;
       height: 100%;
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .preview_foto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .fotos_preview {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      ul {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        li {
+          margin: 1%;
+        }
+      }
+    }
+
+    .main_foto {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
       width: 100%;
     }
   }

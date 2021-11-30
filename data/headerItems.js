@@ -20,8 +20,8 @@ export const headerItems = [
     hidden: true,
   },
   {
-    name: "Cerrar sesión",
-    link: "/",
-    hidden: true,
+    name: "Iniciar sesión",
+    link: "/login",
+    hidden: false,
   },
 ];

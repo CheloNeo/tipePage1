@@ -21,6 +21,10 @@ const Header = () => {
           />
           <ul className={styles.header_list}>
             {headerItems.map(({ name, link, hidden }, i) => {
+              if (name === "Iniciar sesión" && loggedIn) {
+                console.log(name, link, hidden);
+                return <li></li>;
+              }
               return (
                 <li
                   key={i}
@@ -36,6 +40,13 @@ const Header = () => {
                 </li>
               );
             })}
+            {loggedIn && (
+              <li style={{ display: "inline-block" }} onClick={logout}>
+                <Link href="/" passHref>
+                  Cerrar sesión
+                </Link>
+              </li>
+            )}
           </ul>
         </div>
       </div>

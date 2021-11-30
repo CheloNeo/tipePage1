@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap");
 
 .header {
-  width: 100vw;
   height: 15vh;
   color: #fff;
   background: #ff9300;
@@ -14,7 +13,6 @@
     }
     .header_body {
       height: 100%;
-      width: 100%;
       font-family: "Poppins", sans-serif;
       font-weight: bolder;
       display: flex;
@@ -73,13 +71,13 @@
 }
 @media only screen and (max-width: 265px) {
   .header_list {
-      padding-left: 0;
-      justify-content: unset;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      li {
-        size: 5px;
-      }
+    padding-left: 0;
+    justify-content: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      size: 5px;
     }
+  }
 }

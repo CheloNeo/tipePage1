@@ -157,7 +157,11 @@ const Dashboard = () => {
           />
         </div>
         <div className={styles.agregar_producto}>
-          <FotosProducto fotos={fotos} />
+          <FotosProducto
+            fotos={fotos}
+            preview={preview}
+            setPreview={setPreview}
+          />
           <div className={styles.form_producto}>
             <label htmlFor="nombre">
               Nombre del producto <span style={{ color: "#f0a" }}>*</span>
@@ -204,21 +208,31 @@ const Dashboard = () => {
               type="file"
               onChange={(e) => cargarFotos(e.target.files)}
               multiple
+              accept="image/*"
             />
             {id ? (
               <>
-                <button type="submit" onClick={() => agregarProducto()}>
+                <button
+                  type="submit"
+                  onClick={() => agregarProducto()}
+                  className={styles.button}
+                >
                   Actualizar
                 </button>
                 <button
                   onClick={() => limpiarTodo()}
                   style={{ marginTop: "5px" }}
+                  className={styles.button}
                 >
                   Limpiar
                 </button>
               </>
             ) : (
-              <button type="submit" onClick={() => agregarProducto()}>
+              <button
+                type="submit"
+                onClick={() => agregarProducto()}
+                className={styles.button}
+              >
                 Agregar
               </button>
             )}

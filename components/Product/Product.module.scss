@@ -6,6 +6,8 @@
   background: #fff;
   position: relative;
 
+  border: 1px solid #000;
+
   min-height: 400px;
   min-width: 300px;
 
@@ -24,6 +26,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 300px 370px;
+  background-size: cover;
 }
 
 .product_body {
@@ -35,7 +38,8 @@
   flex-direction: column;
   overflow: hidden;
   text-overflow: ellipsis;
-  color: rgb(197, 128, 78);
+  color: #ff9300;
+  font-weight: bolder;
   font-family: "Poppins", sans-serif;
 }
 
