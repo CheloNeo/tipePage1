@@ -12,9 +12,7 @@
   min-width: 300px;
 
   &:hover {
-    transition: 0.5s;
     .product_modal {
-      transition: 0.5s;
       opacity: 1;
     }
   }
@@ -54,6 +52,7 @@
   justify-content: center;
   color: #fff;
   cursor: pointer;
+  transition: 0.5s all;
 
   opacity: 0;
   background: #5557;
