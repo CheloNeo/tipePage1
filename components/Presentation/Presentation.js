@@ -13,6 +13,7 @@ const Presentation = () => {
         <hr style={{ width: "90%", color: "white" }} />
         <div className={styles.presentacion_info_body}>
           <h6>{datos.descripcion_empresa}</h6>
+          <h7>Para mas dudas o consultas haz click aquí</h7>
           <Link href="/#contacto" passHref>
             <button className={styles.contact_button}>Ir a contacto!</button>
           </Link>

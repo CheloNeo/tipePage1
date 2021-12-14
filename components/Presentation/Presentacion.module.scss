@@ -25,17 +25,22 @@
     width: 100%;
     padding: 50px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    text-align: justify;
     justify-content: center;
 
-    h6 {
+    h6, h7{
       font-size: 30px;
       font-weight: lighter;
+    }
+    h7{
+      margin: 2%;
+      text-align: center;
     }
     .contact_button {
       width: 300px;
       height: 60px;
+      align-self: center;
       border-radius: 7px;
       border: 1px solid #fff;
       color: #fff;
@@ -63,8 +68,12 @@
       }
     }
     .presentacion_info_body {
-      h6 {
+      h6{
         font-size: 15px;
+      }
+       h7 {
+        font-size: 15px;
+        margin: 8%;
       }
       .contact_button {
         height: 50px;
