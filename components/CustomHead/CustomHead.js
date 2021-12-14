@@ -9,7 +9,7 @@ const CustomHead = () => {
         <meta
           name="description"
           content="Entregas pro es una pyme que se dedica a la entrega y venta de todo tipo de productos
-          tecnologicos dentro de la Calera!"
+          tecnologicos dentro de la Region de Valparaiso!"
         />
         <link
           rel="stylesheet"
