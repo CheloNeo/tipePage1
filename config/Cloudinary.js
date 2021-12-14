@@ -1,9 +1,9 @@
 const cloudinary = require("cloudinary").v2;
 
 cloudinary.config({
-  cloud_name: "md-mujer",
-  api_key: "856294724554942",
-  api_secret: "j12JADF5v8ybBQpyCJFA8nfexFw",
+  cloud_name: "entregaspro",
+  api_key: "345719359751421",
+  api_secret: "G3awlyLUJOe3exE8ksRpTgkgJ-g",
 });
 
 export default cloudinary;
