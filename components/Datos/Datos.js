@@ -6,7 +6,7 @@ const Datos = ({ nombre }) => {
   return (
     <div className={styles.datos}>
       <a
-        href={`https://api.whatsapp.com/send?phone=56978770897&text=Buenas!%20%20Me%20interesa%20el%20producto%20${nombre}`}
+        href={`https://api.whatsapp.com/send?phone=56948803985&text=Buenas!%20%20Me%20interesa%20el%20producto%20${nombre}`}
         target="_blank"
         rel="noreferrer"
       >
